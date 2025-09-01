@@ -39,9 +39,10 @@ jobs:
       - name: Copy web assets to Cordova www folder
         run: cp -r dist/* quick-guide-app/www/
 
-      - name: Build Android APK
+      - name: Add Platform and Build Android APK
         run: |
           cd quick-guide-app
+          cordova platform add android
           cordova build android --release
 
       - name: Upload APK artifact
