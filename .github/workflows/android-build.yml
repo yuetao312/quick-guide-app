@@ -43,10 +43,7 @@ jobs:
         run: |
           cd quick-guide-app
           cordova platform add android
-          cordova build android --release
-
-      - name: List Build Output for Debugging
-        run: ls -R quick-guide-app/platforms/android/app/build/outputs/
+          cordova build android --release -- --packageType=APK
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
