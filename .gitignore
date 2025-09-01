@@ -1,0 +1,15 @@
+# Dependencies
+/node_modules
+
+# Build output
+/dist
+
+# Cordova build output
+/quick-guide-app/platforms
+/quick-guide-app/plugins
+/quick-guide-app/www/*
+!/quick-guide-app/www/index.html 
+# Keep the default placeholder
+
+# IDEs and editors
+.vscode

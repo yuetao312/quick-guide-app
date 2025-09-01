@@ -1,0 +1,17 @@
+---
+任务: 编写一个网页
+参考:
+  '@package.json': 它的 dependencies 字段定义了可用的第三方库 (jquery、jquery-ui、lodash、toastr、yaml), 你也可以自己通过 `pnpm add` 添加更多第三方库
+最佳实践:
+  - 尽量使用`参考`中的功能进行编写. 例如使用 jquery 而不是 javascript 内置的 DOM 操作
+  - 对前端界面进行样式设计时, 你应该新建 scss 文件而不是直接在 html 里书写, 并在 ts 文件中以 `import './index.scss'` 的形式应用到界面上
+  - 如果需要在界面加载或卸载时执行功能, 你应该使用 jquery 的写法, 禁止使用 `'DOMContentLoaded'`
+  - 项目支持用 `import string from './file?raw'` 来将文件内容作为字符串导入
+  - 你可以通过
+需求: |- # 自行调整你的设计需求
+  接下来我需要你制作一个网页, ...
+要求: |- # 自行调整你对本次 ai 的编写要求. 我这里每一行要求都是示例, 是彼此冲突的, 你一定要自己改!!!
+  立即开始编写代码
+  创建一个 readme 文件在其中写下你的计划
+  请先不要立即开始代码编写, 请你和我谈谈你对我需求的理解。
+  以 scss、typescript、html 最佳实践来进行编写操作, 你可以在文件夹内创建新的目录结构, 分模块化创建 typescript 脚本, 并建立 readme 文档与注释来简要写明每个模块的作用
